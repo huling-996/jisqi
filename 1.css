@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.zhu{
+    width: 320px;
+    height: 520px;
+    background-color: #eaedef;
+    border-radius: 10px;
+}
+.xshi{
+    height: 120px;
+}
+.shuru{
+    height: 400px;
+    
+}
+.xshi .xshishuru{
+    height: 20px;
+    font-size: 15px;
+    color: #919191;
+    text-align: right;
+    margin-right: 15px;
+    
+}
+.xshi .xshishuchu{
+    height: 60px;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 15px;
+}
+/* 按键修饰 */
+.operator, .numbe, .mepty{
+    height: 50px;
+    width: 50px;
+    font-size: 15px;
+    margin:12px 15px;
+    float: left;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 0;
+}
+.operator:nth-child(1), 
+.operator:nth-child(2), 
+.operator:nth-child(3){
+    background-color: #dedee0;
+}
+
+.operator:nth-child(4){
+    background-color: #20b2aa;
+}
+.operator:nth-child(8){
+    background-color: #ffa500;
+}
+.operator:nth-child(12){
+    background-color: #f08080;
+}
+.operator:nth-child(16){
+    background-color: #7d93e0;
+}
+.operator:nth-child(20){
+    background-color: #9477af;
+}
+button{
+    outline:none;  /*点击后按钮不出现框框*/
+    box-shadow: 9px 9px 15px rgba(0,0,0,0.2),
+        -9px -9px 15px rgba(255,255,255,1);
+    transition: all 0.2s ease-out;
+}
+/*鼠标放在按键上的特效*/
+button:hover{
+    font-size: 12px;
+    box-shadow: 0 0 0 rgba(0,0,0,0.2),
+	0 0 0 rgba(255,255,255,0.8),
+	inset 18px 18px 30px rgba(0,0,0,0.1),
+    inset -18px -18px 30px rgba(255,255,255,1);
+}
+button:active{
+    transform: rotate(90deg);
+}
+/*让mepty按钮不出现效果*/
+.mepty{
+    box-shadow: none;
+}
+.mepty:hover{
+    box-shadow: none;
+}
+/*单独设置加减乘除的特效*/
+.operator:nth-child(4):hover{
+    box-shadow: 0 0 0 rgba(0,0,0,0.2),
+	0 0 0 rgba(255,255,255,0.8),
+	inset 18px 18px 30px rgba(0,0,0,0.1),
+	inset -18px -18px 30px rgba(33,178,170,1);
+}
+.operator:nth-child(8):hover{
+    box-shadow: 0 0 0 rgba(0,0,0,0.2),
+	0 0 0 rgba(255,255,255,0.8),
+	inset 18px 18px 30px rgba(0,0,0,0.1),
+	inset -18px -18px 30px rgba(255,165,0,1);
+}
+.operator:nth-child(12):hover{
+    box-shadow: 0 0 0 rgba(0,0,0,0.2),
+	0 0 0 rgba(255,255,255,0.8),
+	inset 18px 18px 30px rgba(0,0,0,0.1),
+	inset -18px -18px 30px rgba(240,131,131,1);
+}
+.operator:nth-child(16):hover{
+    box-shadow: 0 0 0 rgba(0,0,0,0.2),
+	0 0 0 rgba(255,255,255,0.8),
+	inset 18px 18px 30px rgba(0,0,0,0.1),
+	inset -18px -18px 30px rgba(125,147,224,1);
+}
+.operator:nth-child(20):hover{
+    box-shadow: 0 0 0 rgba(0,0,0,0.2),
+	0 0 0 rgba(255,255,255,0.8),
+	inset 18px 18px 30px rgba(0,0,0,0.1),
+	inset -18px -18px 30px rgba(148,119,175,1);
+}
